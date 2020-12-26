@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.jakubtrzcinski</groupId>
-    <artifactId>txc-parser</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <artifactId>tcx-parser</artifactId>
+    <version>1.0.1.RELEASE</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
