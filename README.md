@@ -5,7 +5,7 @@
 ```xml
 <dependency>
     <groupId>pl.jakubtrzcinski</groupId>
-    <artifactId>txc-parser</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <artifactId>tcx-parser</artifactId>
+    <version>1.0.1.RELEASE</version>
 </dependency>
 ```
