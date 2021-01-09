@@ -8,6 +8,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 /**
@@ -28,6 +29,16 @@ public class TcxParser {
     }
 
 
+    /**
+     * Parses a stream containing TCX data
+     *
+     * @param stream the input stream
+     * @return {@link TrainingCenterDatabaseT} object containing parsed data
+     * @throws Exception when TCX file is invalid
+     */
+    public TrainingCenterDatabaseT parseTCX(byte[] stream) throws Exception {
+        return parseTCX(new ByteArrayInputStream(stream));
+    }
     /**
      * Parses a stream containing TCX data
      *
