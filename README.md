@@ -9,7 +9,7 @@
     <dependency>
         <groupId>pl.jakubtrzcinski</groupId>
         <artifactId>tcx-parser</artifactId>
-        <version>1.0.1.RELEASE</version>
+        <version>1.0.2.RELEASE</version>
     </dependency>
 </dependencies>
 ```
@@ -17,7 +17,7 @@
 ### Gradle
 ```groovy
 dependencies {
-    implementation 'pl.jakubtrzcinski:tcx-parser:1.0.1.RELEASE'
+    implementation 'pl.jakubtrzcinski:tcx-parser:1.0.2.RELEASE'
 }
 ```
 
