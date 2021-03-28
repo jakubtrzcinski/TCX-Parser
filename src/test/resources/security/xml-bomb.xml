@@ -1,0 +1,13 @@
+<!DOCTYPE pierre [
+        <!ENTITY ernst9 "PierrePierrePierrePierrePierrePierrePierrePierrePierrePierre">
+        <!ENTITY ernst8 "&ernst9;&ernst9;&ernst9;&ernst9;&ernst9;&ernst9;&ernst9;&ernst9;&ernst9;&ernst9;">
+        <!ENTITY ernst7 "&ernst8;&ernst8;&ernst8;&ernst8;&ernst8;&ernst8;&ernst8;&ernst8;&ernst8;&ernst8;">
+        <!ENTITY ernst6 "&ernst7;&ernst7;&ernst7;&ernst7;&ernst7;&ernst7;&ernst7;&ernst7;&ernst7;&ernst7;">
+        <!ENTITY ernst5 "&ernst6;&ernst6;&ernst6;&ernst6;&ernst6;&ernst6;&ernst6;&ernst6;&ernst6;&ernst6;">
+        <!ENTITY ernst4 "&ernst5;&ernst5;&ernst5;&ernst5;&ernst5;&ernst5;&ernst5;&ernst5;&ernst5;&ernst5;">
+        <!ENTITY ernst3 "&ernst4;&ernst4;&ernst4;&ernst4;&ernst4;&ernst4;&ernst4;&ernst4;&ernst4;&ernst4;">
+        <!ENTITY ernst2 "&ernst3;&ernst3;&ernst3;&ernst3;&ernst3;&ernst3;&ernst3;&ernst3;&ernst3;&ernst3;">
+        <!ENTITY ernst1 "&ernst2;&ernst2;&ernst2;&ernst2;&ernst2;&ernst2;&ernst2;&ernst2;&ernst2;&ernst2;">
+        <!ENTITY ernst0 "&ernst1;&ernst1;&ernst1;&ernst1;&ernst1;&ernst1;&ernst1;&ernst1;&ernst1;&ernst1;">
+        ]>
+<pierre>&ernst0;</pierre>

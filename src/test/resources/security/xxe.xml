@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE bicycle [
+        <!ENTITY xxe SYSTEM "file:///" >
+        ]>
+<bicycle>
+    <name>&xxe;</name>
+    <number-of-riders>666</number-of-riders>
+    <number-of-wheels>666</number-of-wheels>
+</bicycle>
