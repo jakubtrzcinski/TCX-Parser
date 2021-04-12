@@ -19,13 +19,10 @@ public class TcxParser {
 
     private final Unmarshaller jaxbUnmarshaller;
 
-    public TcxParser() {
-        try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(TrainingCenterDatabaseT.class);
-            jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-        } catch (Exception ex){
-            throw new RuntimeException(ex);
-        }
+    public TcxParser() throws JAXBException {
+
+        JAXBContext jaxbContext = JAXBContext.newInstance(TrainingCenterDatabaseT.class);
+        jaxbUnmarshaller = jaxbContext.createUnmarshaller();
     }
 
 
@@ -36,9 +33,10 @@ public class TcxParser {
      * @return {@link TrainingCenterDatabaseT} object containing parsed data
      * @throws Exception when TCX file is invalid
      */
-    public TrainingCenterDatabaseT parseTCX(byte[] stream) throws Exception {
-        return parseTCX(new ByteArrayInputStream(stream));
+    public TrainingCenterDatabaseT parseTCX(String stream) throws JAXBException {
+        return parseTCX(new ByteArrayInputStream(stream.getBytes()));
     }
+
     /**
      * Parses a stream containing TCX data
      *
@@ -46,14 +44,10 @@ public class TcxParser {
      * @return {@link TrainingCenterDatabaseT} object containing parsed data
      * @throws Exception when TCX file is invalid
      */
-    public TrainingCenterDatabaseT parseTCX(InputStream stream) throws Exception {
-        try {
-            Source source = new StreamSource(stream);
-            JAXBElement<TrainingCenterDatabaseT> root = jaxbUnmarshaller.unmarshal(source, TrainingCenterDatabaseT.class);
-            return root.getValue();
-        } catch (JAXBException e) {
-            throw new IllegalArgumentException("Not a valid TCX file.", e);
-        }
+    public TrainingCenterDatabaseT parseTCX(InputStream stream) throws JAXBException {
+        Source source = new StreamSource(stream);
+        JAXBElement<TrainingCenterDatabaseT> root = jaxbUnmarshaller.unmarshal(source, TrainingCenterDatabaseT.class);
+        return root.getValue();
     }
 
 }
